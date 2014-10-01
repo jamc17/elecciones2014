@@ -10,60 +10,6 @@
 	<link rel="stylesheet" href="{% static "css/elecciones.css" %}" />
 </head>
 <body>
-	<header class="row">
-		<form action="" method="GET" id="formSelUbigeo">
-			<div>
-				<div class="small-3 columns">
-					<label for="ambito">
-						Ambito
-						<select name="ambito" id="ambito">
-							{% for ambito in ambitos %}
-								<option value="{{ambito.pk}}">{{ambito}}</option>
-							{% endfor %}
-						</select>
-					</label>
-				</div>
-
-				<div class="small-2 columns">
-					<label for="region">
-						Región
-						<select name="region" id="region">
-							{% for region in regiones %}
-								<option value="{{region.pk}}">{{region}}</option>
-							{% endfor %}
-						</select>
-					</label>
-				</div>
-
-				<div class="small-2 columns">
-					<label for="provincia">
-						Provincia
-						<select name="provincia" id="provincia">
-							<option value="0">--Provincia--</option>
-							{% for provincia in provincias %}
-								<option value="{{provincia.pk}}">{{provincia}}</option>
-							{% endfor %}
-						</select>
-					</label>
-				</div>
-
-				<div class="small-3 columns">
-					<label for="provincia">
-						Distrito
-						<select name="distrito" id="distrito">
-							<option value="0">--Distrito--</option>
-						</select>
-					</label>
-				</div>
-
-				<div class="small-2 columns">
-					<br>
-					<input type="submit" class="button tiny" value="Buscar" />
-				</div>
-			</div>
-		</form>
-		<hr />
-	</header>
 	<section class="row">
 		{% block contenido %}
 		<div class="columns small-12">

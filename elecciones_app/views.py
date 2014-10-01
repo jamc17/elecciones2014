@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.db.models import Q
+from django.http import HttpResponse
+from django.db.models import Q, Sum
 import json
-from .models import Ambito, Ubigeo, CentroVotacion, GrupoVotacion, AgrupacionPolitica, Acta
+from .models import Ambito, Ubigeo, CentroVotacion, GrupoVotacion, AgrupacionPolitica, APoliticaUbigeo, Acta
 
 
 def index(request):
@@ -19,7 +20,10 @@ def index(request):
 
 def gruposVotacion(request, idCentroVotacion):
 	centroVotacion = CentroVotacion.objects.get(pk = idCentroVotacion)
+
 	gruposVotacion = GrupoVotacion.objects.filter(centroVotacion = centroVotacion)
+	totalElectores = gruposVotacion.aggregate(cantidad = Sum('electoresHabiles'))
+
 	return render(request, "elecciones_app/gruposVotacion.html", locals())
 
 
@@ -31,33 +35,49 @@ def distritos(request, idProv):
 
 def registrarActa(request, idGrupoVotacion, idDistrito, idAmbito):
 	grupoVotacion = GrupoVotacion.objects.get(pk = idGrupoVotacion)
-	# centroVotacion = CentroVotacion.objects.filter(grupovotacion__id = idGrupoVotacion)
 	distrito = Ubigeo.objects.get(pk = idDistrito)
 	ambito = Ambito.objects.get(pk = idAmbito)
 
+	agrupacionesPoliticas = AgrupacionPolitica.objects.filter(ubigeo__pk = idDistrito, apoliticaubigeo__ambito__pk = idAmbito)
 
-	agrupacionesPoliticas = AgrupacionPolitica.objects.filter(ubigeo__pk = idDistrito, acta__ambito__pk = idAmbito)
 
 	actas = Acta.objects.filter(
-		Q(ubigeo = distrito),
-		Q(ambito__pk = 1) | Q(ambito__pk = 2),
+		Q(APoliticaUbigeo__ubigeo = distrito),
+		Q(APoliticaUbigeo__ambito__pk = 1) | Q(APoliticaUbigeo__ambito__pk = 2),
 		Q(grupoVotacion = grupoVotacion)
-	).order_by("ambito__pk")
+	).order_by("APoliticaUbigeo__ambito__pk")
 
-	if ambito.nombre == "Presidente Regional":
+	if ambito.nombre == "Presidente Regional" or ambito.nombre == "Consejero Regional":
 		return render(request, "elecciones_app/registrarActa.html", locals())
 
 
 def registrarActaSubmit(request):
 	votos = json.loads(request.POST.get("json"))
-	for voto in votos:
-		# print voto["actaId"] + " -> " + voto["numVotos"]
-		# Guardamos votos en la base de datos
-		acta = Acta.objects.get(pk = voto["actaId"])
-		acta.numVotos = voto["numVotos"]
-		acta.save()
+	centroVotacionId = int(request.POST.get("centroVotacion"))
+	grupoVotacionId = int(request.POST.get("grupoVotacion"))
 
-	return render(request, "elecciones_app/registrarActa.html", locals())
+	response_data  = {}
+	response_data["centroVotacion"] = centroVotacionId
+	try:
+		for voto in votos:
+			# Guardamos votos en la base de datos
+			acta = Acta.objects.get(pk = voto["actaId"])
+			acta.numVotos = voto["numVotos"]
+			acta.save()
+
+		grupoVotacion = GrupoVotacion.objects.get(pk = grupoVotacionId)
+		grupoVotacion.contabilizado = True
+		grupoVotacion.save()
+
+		response_data['estado'] = 1
+		response_data['message'] = "Datos guardados correctamente"
+		
+	except Exception, e:
+		response_data['estado'] = 0
+		response_data['message'] = "Error: " + str(e)
+
+	return HttpResponse(json.dumps(response_data), content_type="application/json")
+	
 
 
 

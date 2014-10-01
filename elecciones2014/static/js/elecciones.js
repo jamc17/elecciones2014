@@ -1,22 +1,33 @@
 $(document).ready(function () {
 	function getDistritos(){
-		$("#distrito").load("distritos/"+$(this).val())
+		$("#distrito").load("distritos/"+$(this).val(), function () {
+			getLocalesVotacion();
+		})
 	}
 
 	function getLocalesVotacion(e){
-		e.preventDefault();
-		var params = $(this).serialize();
+		var form = $("#formSelUbigeo");
+		var params = $(form).serialize();
 
-		$("#centrosVotacion").load("/?" + params, function () {
-			$(".centroVotacion").on("click", getGruposVotacion);
-		});
-
+		$("#centroVotacion").load("/?" + params);
 	}
 
 	function getGruposVotacion(e){
-		e.preventDefault();
-		var url = $(this).attr("href");
-		$("#centrosVotacion").load(url, function () {
+		if (e) {
+			e.preventDefault();	
+		}
+		
+		var centroVotacion = $("#centroVotacion").val()
+
+		if (centroVotacion === '0') {
+			alert("Seleccione un centro de votación");
+			return;
+		}
+
+		var url = "gruposVotacion/" + centroVotacion
+		
+
+		$("#contenido").load(url, function () {
 			$(".grupoVotacion").on("click", getActa);
 		});
 	}
@@ -27,8 +38,9 @@ $(document).ready(function () {
 		var distrito = $("#distrito").val();
 		var ambito = $("#ambito").val();
 		url += "/" + distrito + "/" + ambito;
-		$("#centrosVotacion").load(url, function () {
-			$("#formRegistrarActa").on("submit", registrarActa)
+		$("#contenido").load(url, function () {
+			$("#formRegistrarActa").on("submit", registrarActa);
+			$("#resetForm").on("click", getGruposVotacion);
 		});
 	}
 
@@ -38,23 +50,33 @@ $(document).ready(function () {
 		var formJson = [];
 
 		inputs.each(function (index) {
+			if ($(this).val() == '') {
+				$(this).val(0);
+			}
 			formJson.push({"actaId": $(this).attr("data-acta"), "numVotos": $(this).val()});
 		})
-
 		var csfrtoken = $("input[name=csrfmiddlewaretoken]").val();
+		var centroVotacion = $("#centroVotacion").val();
+		var grupoVotacion = $("#grupoVotacion").val();
 
 		$.ajax({
 	        url: 'registrarActaSubmit/',
 	        type: 'POST',
-	        data: {json: JSON.stringify(formJson), csrfmiddlewaretoken: csfrtoken},
+	        data: {json: JSON.stringify(formJson), csrfmiddlewaretoken: csfrtoken, centroVotacion: centroVotacion, grupoVotacion: grupoVotacion},
 	        dataType: 'json',
 	        success: function (data, textStatus, jqXHR) {
-	        	
+	        	if (data.estado == 1) {
+					getGruposVotacion();
+	        	}
+	        	else{
+	        		alert("Error: No se puedo guardar el acta...")
+	        	}
 	        }
 	    });
 	}
 
 
-	$("#formSelUbigeo").on("submit", getLocalesVotacion);
+	$("#formSelUbigeo").on("submit", getGruposVotacion);
 	$("#provincia").on("change", getDistritos);
+	$("#distrito").on("change", getLocalesVotacion);
 });

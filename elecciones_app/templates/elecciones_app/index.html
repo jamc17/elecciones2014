@@ -1,12 +1,88 @@
 {% extends "layout.html" %}
 
 {% block contenido %}
-	<ul id="centrosVotacion">
-	{% for centroVotacion in centrosVotacion %}
-		<li>{{centroVotacion}}</li>
-	{% empty %}
-		<li>Seleccione un distrito</li>
-	{% endfor %}
-	</ul>
+	<header>
+		<form action="" method="GET" id="formSelUbigeo">
+			<div class="row">
+				<div class="small-6 columns">
+					<div class="row">
+						<div class="small-4 columns">
+							<label for="ambito">
+								Ambito:
+							</label>
+						</div>
+
+						<div class="small-8 columns">
+							<select name="ambito" id="ambito">
+								{% for ambito in ambitos %}
+									<option value="{{ambito.pk}}">{{ambito}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="small-2 columns">
+					<label for="region">
+						Región
+						<select name="region" id="region">
+							{% for region in regiones %}
+								<option value="{{region.pk}}">{{region}}</option>
+							{% endfor %}
+						</select>
+					</label>
+				</div>
+
+				<div class="small-2 columns">
+					<label for="provincia">
+						Provincia
+						<select name="provincia" id="provincia">
+							<option value="0">--Provincia--</option>
+							{% for provincia in provincias %}
+								<option value="{{provincia.pk}}">{{provincia}}</option>
+							{% endfor %}
+						</select>
+					</label>
+				</div>
+
+				<div class="small-3 columns">
+					<label for="distrito">
+						Distrito
+						<select name="distrito" id="distrito">
+							<option value="0">--Distrito--</option>
+						</select>
+					</label>
+				</div>
+
+				<div class="small-3 columns">
+					<label for="centroVotacion">
+						Local Votacion
+						<select name="centroVotacion" id="centroVotacion">
+							<option value="0">--Local Votacion--</option>
+						</select>
+					</label>
+				</div>
+
+				<div class="small-2 columns">
+					<br>
+					<input type="submit" class="button tiny" value="Buscar" />
+				</div>
+			</div>
+		</form>
+	</header>
+
+	<div id="contenido">
+		<ul>
+		{% for centroVotacion in centrosVotacion %}
+			<li>{{centroVotacion}}</li>
+		{% empty %}
+			<li>Seleccione un distrito</li>
+		{% endfor %}
+		</ul>
+	</div>
 {% endblock contenido %}
 

@@ -1,26 +1,34 @@
+<h3 class="center-text">{{ambito.nombre}}</h3>
+<h4 class="center-text">Centro Votacion: {{grupoVotacion.centroVotacion.nombre}} -> Mesa: {{grupoVotacion.codigo}}</h4>
 <form action="" id="formRegistrarActa" method="POST">
 	<table class="acta">
 		<thead>
 			<tr>
-				<th class="orgP">ORGANIZACIONES POLÍTICAS</th>
-				<th class="votos">Total de Votos Presidente y Vicepresidente</th>
-				<th class="votos">Total de Votos Consejero Regional</th>
+				<th class="orgP center-text">ORGANIZACIONES POLÍTICAS</th>
+				<th class="votos center-text">Total de Votos Presidente y Vicepresidente</th>
+				<th class="votos center-text">Total de Votos Consejero Regional</th>
 			</tr>
 		</thead>
 		<tbody>
 		{% for agrupacionPolitica in agrupacionesPoliticas %}
 			<tr>
-				<td><label>{{agrupacionPolitica}}</label></td>
+				<td>{{agrupacionPolitica}}</td>
 				{% for acta in actas %}
-					{% if agrupacionPolitica.pk == acta.agrupacionPolitica.pk %}
+					{% if acta.APoliticaUbigeo.agrupacionPolitica = agrupacionPolitica %}
 						<td>
-							<input type="number" value="{{acta.numVotos}}" name="numVotos" data-partidoPol="{{agrupacionPolitica.pk}}" data-ubigeo="{{acta.ubigeo.pk}}" data-ambito="{{acta.ambito.nombre}}" data-acta="{{acta.pk}}" /></td>
+							<input type="number" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}" />
+						</td>
 					{% endif %}
 				{% endfor %}
 			</tr>
 		{% endfor %}
 		</tbody>
 	</table>
+	<input type="hidden" id="grupoVotacion" value="{{grupoVotacion.pk}}" />
+	<input type="hidden" id="centroVotacion" value="{{grupoVotacion.centroVotacion.pk}}" />
 	{% csrf_token %}
-<div><input type="submit" value="Guardar" class="button" /></div>
+	<div>
+		<input type="submit" value="Guardar" class="button radius" />
+		<input type="reset" id="resetForm" value="Cancelar" class="button radius secondary" />
+	</div>
 </form>

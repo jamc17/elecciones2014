@@ -1,0 +1,26 @@
+<form action="" id="formRegistrarActa" method="POST">
+	<table class="acta">
+		<thead>
+			<tr>
+				<th class="orgP">ORGANIZACIONES POLÍTICAS</th>
+				<th class="votos">Total de Votos Presidente y Vicepresidente</th>
+				<th class="votos">Total de Votos Consejero Regional</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for agrupacionPolitica in agrupacionesPoliticas %}
+			<tr>
+				<td>{{agrupacionPolitica}}</td>
+				{% for acta in actas %}
+					{% if agrupacionPolitica.pk == acta.agrupacionPolitica.pk %}
+						<td>
+							<input type="number" value="{{acta.numVotos}}" name="numVotos" data-partidoPol="{{agrupacionPolitica.pk}}" data-ubigeo="{{acta.ubigeo.pk}}" data-ambito="{{acta.ambito.nombre}}" data-acta="{{acta.pk}}" /></td>
+					{% endif %}
+				{% endfor %}
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	{% csrf_token %}
+<div><input type="submit" value="Guardar" class="button" /></div>
+</form>

@@ -29,6 +29,7 @@ class GrupoVotacion(models.Model):
 	codigo = models.CharField(max_length=8)
 	centroVotacion = models.ForeignKey(CentroVotacion)
 	electoresHabiles = models.IntegerField(null=True, blank=True)
+	contabilizado = models.BooleanField(default = False)
 
 	def __unicode__(self):
 		return self.codigo
@@ -37,23 +38,28 @@ class GrupoVotacion(models.Model):
 class AgrupacionPolitica(models.Model):
 	nombre = models.CharField(max_length=70)
 	logo = models.ImageField(null=True, blank=True)
-	ubigeo = models.ManyToManyField(Ubigeo, through = "Acta")
-	# ambito = models.ManyToManyField(Ambito)
-	# numVotos = models.IntegerField(null=True, blank=True)
+	ubigeo = models.ManyToManyField(Ubigeo, through = "APoliticaUbigeo")
 
 	def __unicode__(self):
 		return self.nombre
 
 
-class Acta(models.Model):
+class APoliticaUbigeo(models.Model):
 	ubigeo = models.ForeignKey(Ubigeo)
 	agrupacionPolitica = models.ForeignKey(AgrupacionPolitica)
 	ambito = models.ForeignKey(Ambito)
+
+	def __unicode__(self):
+		return self.ambito.nombre + " -> " + self.ubigeo.nombre + " -> " + self.agrupacionPolitica.nombre 
+
+
+class Acta(models.Model):
+	APoliticaUbigeo = models.ForeignKey(APoliticaUbigeo)
 	grupoVotacion = models.ForeignKey(GrupoVotacion, null=True, blank=True)
 	numVotos = models.IntegerField(null=True, blank=True)
 
 	def __unicode__(self):
-		return self.ambito.nombre + " -> " + self.ubigeo.nombre + " -> " + self.agrupacionPolitica.nombre
+		return self.APoliticaUbigeo.ubigeo.nombre + " -> " + self.grupoVotacion.codigo + " - " + str(self.numVotos)
 
 
 

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block contenido %}
+	<ul id="centrosVotacion">
+	{% for centroVotacion in centrosVotacion %}
+		<li>{{centroVotacion}}</li>
+	{% empty %}
+		<li>Seleccione un distrito</li>
+	{% endfor %}
+	</ul>
+{% endblock contenido %}
+

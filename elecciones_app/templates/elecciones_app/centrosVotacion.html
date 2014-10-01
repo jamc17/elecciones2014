@@ -1,0 +1,6 @@
+{% for centroVotacion in centrosVotacion %}
+	<li><a href="gruposVotacion/{{centroVotacion.pk}}" class="centroVotacion">{{centroVotacion}}</a></li>
+{% empty %}
+	<li>No existen centros de votación para el distrito</li>
+{% endfor %}
+	

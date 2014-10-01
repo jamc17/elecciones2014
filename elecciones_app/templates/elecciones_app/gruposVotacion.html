@@ -1,0 +1,5 @@
+{% for grupoVotacion in gruposVotacion %}
+	<li><a href="registrarActa/{{grupoVotacion.pk}}" class="grupoVotacion">{{grupoVotacion}} - Registrar Acta</a></li>
+{% empty %}
+	<li>No existen grupos de votación para este Centro de Votación</li>
+{% endfor %}

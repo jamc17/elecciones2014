@@ -10,6 +10,26 @@
 	<link rel="stylesheet" href="{% static "css/elecciones.css" %}" />
 </head>
 <body>
+	<header>
+		<div class="row">
+			<div class="small-1 columns">
+				<figure>
+					<img src="{%static 'img/logoSmall.png' %}" alt="Mas" />
+				</figure>
+			</div>
+			<div class="small-11 columns">
+				<h3 class="small-8 columns">Sistema de Conteo de Actas</h3>
+				<div class="small-4 columns">
+					<ul class="menu">
+						<li><a href="#">Registro Actas</a></li>
+						<li><a href="#">Reportes</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+
 	<section class="row">
 		{% block contenido %}
 		<div class="columns small-12">

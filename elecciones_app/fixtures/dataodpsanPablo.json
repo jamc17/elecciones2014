@@ -1,0 +1,5200 @@
+[
+{
+    "fields": {
+        "nombre": "Regional Presidente"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 1
+},
+{
+    "fields": {
+        "nombre": "Regional Consejero"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 2
+},
+{
+    "fields": {
+        "nombre": "Regional"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 3
+},
+{
+    "fields": {
+        "nombre": "Municipal Provincial"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 4
+},
+{
+    "fields": {
+        "nombre": "Municipal Distrital"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 5
+},
+{
+    "fields": {
+        "nombre": "Municipal"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 6
+},
+{
+    "fields": {
+        "nombre": "CAJAMARCA",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "00"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 1
+},
+{
+    "fields": {
+        "nombre": "CAJAMARCA",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 2
+},
+{
+    "fields": {
+        "nombre": "CAJAMARCA",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 3
+},
+{
+    "fields": {
+        "nombre": "ASUNCION",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 4
+},
+{
+    "fields": {
+        "nombre": "CHETILLA",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 5
+},
+{
+    "fields": {
+        "nombre": "COSPAN",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 6
+},
+{
+    "fields": {
+        "nombre": "ENCA\u00d1ADA",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 7
+},
+{
+    "fields": {
+        "nombre": "JESUS",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 8
+},
+{
+    "fields": {
+        "nombre": "LLACANORA",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 9
+},
+{
+    "fields": {
+        "nombre": "LOS BA\u00d1OS DEL INCA",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 10
+},
+{
+    "fields": {
+        "nombre": "MAGDALENA",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 11
+},
+{
+    "fields": {
+        "nombre": "MATARA",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 12
+},
+{
+    "fields": {
+        "nombre": "NAMORA",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 13
+},
+{
+    "fields": {
+        "nombre": "SAN JUAN",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "01"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 14
+},
+{
+    "fields": {
+        "nombre": "CAJABAMBA",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "02"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 15
+},
+{
+    "fields": {
+        "nombre": "CAJABAMBA",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "02"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 16
+},
+{
+    "fields": {
+        "nombre": "CACHACHI",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "02"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 17
+},
+{
+    "fields": {
+        "nombre": "CONDEBAMBA",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "02"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 18
+},
+{
+    "fields": {
+        "nombre": "SITACOCHA",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "02"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 19
+},
+{
+    "fields": {
+        "nombre": "CELENDIN",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 20
+},
+{
+    "fields": {
+        "nombre": "CELENDIN",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 21
+},
+{
+    "fields": {
+        "nombre": "CHUMUCH",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 22
+},
+{
+    "fields": {
+        "nombre": "CORTEGANA",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 23
+},
+{
+    "fields": {
+        "nombre": "HUASMIN",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 24
+},
+{
+    "fields": {
+        "nombre": "JORGE CHAVEZ",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 25
+},
+{
+    "fields": {
+        "nombre": "JOSE GALVEZ",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 26
+},
+{
+    "fields": {
+        "nombre": "MIGUEL IGLESIAS",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 27
+},
+{
+    "fields": {
+        "nombre": "OXAMARCA",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 28
+},
+{
+    "fields": {
+        "nombre": "SOROCHUCO",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 29
+},
+{
+    "fields": {
+        "nombre": "SUCRE",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 30
+},
+{
+    "fields": {
+        "nombre": "UTCO",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 31
+},
+{
+    "fields": {
+        "nombre": "LA LIBERTAD DE PALLAN",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "03"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 32
+},
+{
+    "fields": {
+        "nombre": "CHOTA",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 33
+},
+{
+    "fields": {
+        "nombre": "CHOTA",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 34
+},
+{
+    "fields": {
+        "nombre": "ANGUIA",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 35
+},
+{
+    "fields": {
+        "nombre": "CHADIN",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 36
+},
+{
+    "fields": {
+        "nombre": "CHIGUIRIP",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 37
+},
+{
+    "fields": {
+        "nombre": "CHIMBAN",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 38
+},
+{
+    "fields": {
+        "nombre": "CHOROPAMPA",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 39
+},
+{
+    "fields": {
+        "nombre": "COCHABAMBA",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 40
+},
+{
+    "fields": {
+        "nombre": "CONCHAN",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 41
+},
+{
+    "fields": {
+        "nombre": "HUAMBOS",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 42
+},
+{
+    "fields": {
+        "nombre": "LAJAS",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 43
+},
+{
+    "fields": {
+        "nombre": "LLAMA",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 44
+},
+{
+    "fields": {
+        "nombre": "MIRACOSTA",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 45
+},
+{
+    "fields": {
+        "nombre": "PACCHA",
+        "codDep": "06",
+        "codDis": "13",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 46
+},
+{
+    "fields": {
+        "nombre": "PION",
+        "codDep": "06",
+        "codDis": "14",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 47
+},
+{
+    "fields": {
+        "nombre": "QUEROCOTO",
+        "codDep": "06",
+        "codDis": "15",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 48
+},
+{
+    "fields": {
+        "nombre": "SAN JUAN DE LICUPIS",
+        "codDep": "06",
+        "codDis": "16",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 49
+},
+{
+    "fields": {
+        "nombre": "TACABAMBA",
+        "codDep": "06",
+        "codDis": "17",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 50
+},
+{
+    "fields": {
+        "nombre": "TOCMOCHE",
+        "codDep": "06",
+        "codDis": "18",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 51
+},
+{
+    "fields": {
+        "nombre": "CHALAMARCA",
+        "codDep": "06",
+        "codDis": "19",
+        "codPro": "04"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 52
+},
+{
+    "fields": {
+        "nombre": "CONTUMAZA",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 53
+},
+{
+    "fields": {
+        "nombre": "CONTUMAZA",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 54
+},
+{
+    "fields": {
+        "nombre": "CHILETE",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 55
+},
+{
+    "fields": {
+        "nombre": "CUPISNIQUE",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 56
+},
+{
+    "fields": {
+        "nombre": "GUZMANGO",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 57
+},
+{
+    "fields": {
+        "nombre": "SAN BENITO",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 58
+},
+{
+    "fields": {
+        "nombre": "SANTA CRUZ DE TOLED",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 59
+},
+{
+    "fields": {
+        "nombre": "TANTARICA",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 60
+},
+{
+    "fields": {
+        "nombre": "YONAN",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "05"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 61
+},
+{
+    "fields": {
+        "nombre": "CUTERVO",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 62
+},
+{
+    "fields": {
+        "nombre": "CUTERVO",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 63
+},
+{
+    "fields": {
+        "nombre": "CALLAYUC",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 64
+},
+{
+    "fields": {
+        "nombre": "CHOROS",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 65
+},
+{
+    "fields": {
+        "nombre": "CUJILLO",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 66
+},
+{
+    "fields": {
+        "nombre": "LA RAMADA",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 67
+},
+{
+    "fields": {
+        "nombre": "PIMPINGOS",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 68
+},
+{
+    "fields": {
+        "nombre": "QUEROCOTILLO",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 69
+},
+{
+    "fields": {
+        "nombre": "SAN ANDRES DE CUTERVO",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 70
+},
+{
+    "fields": {
+        "nombre": "SAN JUAN DE CUTERVO",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 71
+},
+{
+    "fields": {
+        "nombre": "SAN LUIS DE LUCMA",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 72
+},
+{
+    "fields": {
+        "nombre": "SANTA CRUZ",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 73
+},
+{
+    "fields": {
+        "nombre": "SANTO DOMINGO DE LA CAPILLA",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 74
+},
+{
+    "fields": {
+        "nombre": "SANTO TOMAS",
+        "codDep": "06",
+        "codDis": "13",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 75
+},
+{
+    "fields": {
+        "nombre": "SOCOTA",
+        "codDep": "06",
+        "codDis": "14",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 76
+},
+{
+    "fields": {
+        "nombre": "TORIBIO CASANOVA",
+        "codDep": "06",
+        "codDis": "15",
+        "codPro": "06"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 77
+},
+{
+    "fields": {
+        "nombre": "HUALGAYOC",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "07"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 78
+},
+{
+    "fields": {
+        "nombre": "BAMBAMARCA",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "07"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 79
+},
+{
+    "fields": {
+        "nombre": "CHUGUR",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "07"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 80
+},
+{
+    "fields": {
+        "nombre": "HUALGAYOC",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "07"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 81
+},
+{
+    "fields": {
+        "nombre": "JAEN",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 82
+},
+{
+    "fields": {
+        "nombre": "JAEN",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 83
+},
+{
+    "fields": {
+        "nombre": "BELLAVISTA",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 84
+},
+{
+    "fields": {
+        "nombre": "CHONTALI",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 85
+},
+{
+    "fields": {
+        "nombre": "COLASAY",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 86
+},
+{
+    "fields": {
+        "nombre": "HUABAL",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 87
+},
+{
+    "fields": {
+        "nombre": "LAS PIRIAS",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 88
+},
+{
+    "fields": {
+        "nombre": "POMAHUACA",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 89
+},
+{
+    "fields": {
+        "nombre": "PUCARA",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 90
+},
+{
+    "fields": {
+        "nombre": "SALLIQUE",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 91
+},
+{
+    "fields": {
+        "nombre": "SAN FELIPE",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 92
+},
+{
+    "fields": {
+        "nombre": "SAN JOSE DEL ALTO",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 93
+},
+{
+    "fields": {
+        "nombre": "SANTA ROSA",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "08"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 94
+},
+{
+    "fields": {
+        "nombre": "SAN IGNACIO",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 95
+},
+{
+    "fields": {
+        "nombre": "SAN IGNACIO",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 96
+},
+{
+    "fields": {
+        "nombre": "CHIRINOS",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 97
+},
+{
+    "fields": {
+        "nombre": "HUARANGO",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 98
+},
+{
+    "fields": {
+        "nombre": "LA COIPA",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 99
+},
+{
+    "fields": {
+        "nombre": "NAMBALLE",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 100
+},
+{
+    "fields": {
+        "nombre": "SAN JOSE DE LOURDES",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 101
+},
+{
+    "fields": {
+        "nombre": "TABACONAS",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "09"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 102
+},
+{
+    "fields": {
+        "nombre": "SAN MARCOS",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 103
+},
+{
+    "fields": {
+        "nombre": "PEDRO GALVEZ",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 104
+},
+{
+    "fields": {
+        "nombre": "CHANCAY",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 105
+},
+{
+    "fields": {
+        "nombre": "EDUARDO VILLANUEVA",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 106
+},
+{
+    "fields": {
+        "nombre": "GREGORIO PITA",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 107
+},
+{
+    "fields": {
+        "nombre": "ICHOCAN",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 108
+},
+{
+    "fields": {
+        "nombre": "JOSE MANUEL QUIROZ",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 109
+},
+{
+    "fields": {
+        "nombre": "JOSE SABOGAL",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "10"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 110
+},
+{
+    "fields": {
+        "nombre": "SAN MIGUEL",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 111
+},
+{
+    "fields": {
+        "nombre": "SAN MIGUEL",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 112
+},
+{
+    "fields": {
+        "nombre": "BOLIVAR",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 113
+},
+{
+    "fields": {
+        "nombre": "CALQUIS",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 114
+},
+{
+    "fields": {
+        "nombre": "CATILLUC",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 115
+},
+{
+    "fields": {
+        "nombre": "EL PRADO",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 116
+},
+{
+    "fields": {
+        "nombre": "LA FLORIDA",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 117
+},
+{
+    "fields": {
+        "nombre": "LLAPA",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 118
+},
+{
+    "fields": {
+        "nombre": "NANCHOC",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 119
+},
+{
+    "fields": {
+        "nombre": "NIEPOS",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 120
+},
+{
+    "fields": {
+        "nombre": "SAN GREGORIO",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 121
+},
+{
+    "fields": {
+        "nombre": "SAN SILVESTRE DE COCHAN",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 122
+},
+{
+    "fields": {
+        "nombre": "TONGOD",
+        "codDep": "06",
+        "codDis": "12",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 123
+},
+{
+    "fields": {
+        "nombre": "UNION AGUA BLANCA",
+        "codDep": "06",
+        "codDis": "13",
+        "codPro": "11"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 124
+},
+{
+    "fields": {
+        "nombre": "SAN PABLO",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "12"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 125
+},
+{
+    "fields": {
+        "nombre": "SAN PABLO",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "12"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 126
+},
+{
+    "fields": {
+        "nombre": "SAN BERNARDINO",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "12"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 127
+},
+{
+    "fields": {
+        "nombre": "SAN LUIS",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "12"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 128
+},
+{
+    "fields": {
+        "nombre": "TUMBADEN",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "12"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 129
+},
+{
+    "fields": {
+        "nombre": "SANTA CRUZ",
+        "codDep": "06",
+        "codDis": "00",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 130
+},
+{
+    "fields": {
+        "nombre": "SANTA CRUZ",
+        "codDep": "06",
+        "codDis": "01",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 131
+},
+{
+    "fields": {
+        "nombre": "ANDABAMBA",
+        "codDep": "06",
+        "codDis": "02",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 132
+},
+{
+    "fields": {
+        "nombre": "CATACHE",
+        "codDep": "06",
+        "codDis": "03",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 133
+},
+{
+    "fields": {
+        "nombre": "CHANCAYBA\u00d1OS",
+        "codDep": "06",
+        "codDis": "04",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 134
+},
+{
+    "fields": {
+        "nombre": "LA ESPERANZA",
+        "codDep": "06",
+        "codDis": "05",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 135
+},
+{
+    "fields": {
+        "nombre": "NINABAMBA",
+        "codDep": "06",
+        "codDis": "06",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 136
+},
+{
+    "fields": {
+        "nombre": "PULAN",
+        "codDep": "06",
+        "codDis": "07",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 137
+},
+{
+    "fields": {
+        "nombre": "SAUCEPAMPA",
+        "codDep": "06",
+        "codDis": "08",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 138
+},
+{
+    "fields": {
+        "nombre": "SEXI",
+        "codDep": "06",
+        "codDis": "09",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 139
+},
+{
+    "fields": {
+        "nombre": "UTICYACU",
+        "codDep": "06",
+        "codDis": "10",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 140
+},
+{
+    "fields": {
+        "nombre": "YAUYUCAN",
+        "codDep": "06",
+        "codDis": "11",
+        "codPro": "13"
+    },
+    "model": "elecciones_app.ubigeo",
+    "pk": 141
+},
+{
+    "fields": {
+        "nombre": "IE 82097 GREGORIO PITA",
+        "ubigeo": 126
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 1
+},
+{
+    "fields": {
+        "nombre": "IEP SAN PABLO",
+        "ubigeo": 126
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 2
+},
+{
+    "fields": {
+        "nombre": "ISEP 13 DE JULIO DE 1882",
+        "ubigeo": 126
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 3
+},
+{
+    "fields": {
+        "nombre": "IE 82260",
+        "ubigeo": 127
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 4
+},
+{
+    "fields": {
+        "nombre": "IE SAN LUIS GRANDE",
+        "ubigeo": 128
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 5
+},
+{
+    "fields": {
+        "nombre": "IE SALOMON CACERES OLIVA",
+        "ubigeo": 129
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 6
+},
+{
+    "fields": {
+        "nombre": "CES SAN MIGUEL",
+        "ubigeo": 112
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 7
+},
+{
+    "fields": {
+        "nombre": "EEP N\u00ba 82737 MARIA SANCHEZ QUIROZ",
+        "ubigeo": 112
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 8
+},
+{
+    "fields": {
+        "nombre": "IE RAFAEL HOYOS RUBIO",
+        "ubigeo": 114
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 9
+},
+{
+    "fields": {
+        "nombre": "IEP 82744 LUIS GONZAGA PEREZ MALCA",
+        "ubigeo": 114
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 10
+},
+{
+    "fields": {
+        "nombre": "IE 82748 LEONCIO PRADO",
+        "ubigeo": 117
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 11
+},
+{
+    "fields": {
+        "nombre": "IEP 82753 ISABEL BARRANTES MALCA",
+        "ubigeo": 118
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 12
+},
+{
+    "fields": {
+        "nombre": "IESM JOSE GALVEZ EGUSQUIZA",
+        "ubigeo": 119
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 13
+},
+{
+    "fields": {
+        "nombre": "IE 82761",
+        "ubigeo": 120
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 14
+},
+{
+    "fields": {
+        "nombre": "IE HORACIO ZEVALLOS GAMEZ",
+        "ubigeo": 121
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 15
+},
+{
+    "fields": {
+        "nombre": "IE SAN GREGORIO",
+        "ubigeo": 121
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 16
+},
+{
+    "fields": {
+        "nombre": "IEP JESUS NAZARENO",
+        "ubigeo": 122
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 17
+},
+{
+    "fields": {
+        "nombre": "IE 82742",
+        "ubigeo": 116
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 18
+},
+{
+    "fields": {
+        "nombre": "IEPM 82771",
+        "ubigeo": 116
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 19
+},
+{
+    "fields": {
+        "nombre": "IEP 82767",
+        "ubigeo": 124
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 20
+},
+{
+    "fields": {
+        "nombre": "IEP 82857 - LIVES",
+        "ubigeo": 124
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 21
+},
+{
+    "fields": {
+        "nombre": "IE ALBERTO TURPAUD",
+        "ubigeo": 123
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 22
+},
+{
+    "fields": {
+        "nombre": "IE TUPAC AMARU",
+        "ubigeo": 115
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 23
+},
+{
+    "fields": {
+        "nombre": "IEPM 82758",
+        "ubigeo": 113
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 24
+},
+{
+    "fields": {
+        "nombre": "IE 82536-CATUDEN",
+        "ubigeo": 54
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 25
+},
+{
+    "fields": {
+        "nombre": "IEP 82532 NICOLAS CEDRON CAMACHO",
+        "ubigeo": 54
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 26
+},
+{
+    "fields": {
+        "nombre": "IEP 82925 - PRIMARIA",
+        "ubigeo": 54
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 27
+},
+{
+    "fields": {
+        "nombre": "IE GRAN GUZMANGO CAPAC",
+        "ubigeo": 55
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 28
+},
+{
+    "fields": {
+        "nombre": "IE SAN FRANCISCO DE GUZMANGO",
+        "ubigeo": 57
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 29
+},
+{
+    "fields": {
+        "nombre": "IE SANTA ROSA DE JAGUEY",
+        "ubigeo": 58
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 30
+},
+{
+    "fields": {
+        "nombre": "IEPM 82559 PRIMARIA",
+        "ubigeo": 58
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 31
+},
+{
+    "fields": {
+        "nombre": "IE SANTISIMA TRINIDAD",
+        "ubigeo": 56
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 32
+},
+{
+    "fields": {
+        "nombre": "IE SAN FRANCISCO DE ASIS",
+        "ubigeo": 60
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 33
+},
+{
+    "fields": {
+        "nombre": "IEP FIDEL ZARATE PLASENCIA",
+        "ubigeo": 60
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 34
+},
+{
+    "fields": {
+        "nombre": "IE SAN ISIDRO TEMBLADERA",
+        "ubigeo": 61
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 35
+},
+{
+    "fields": {
+        "nombre": "IE 82567 EX 110",
+        "ubigeo": 61
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 36
+},
+{
+    "fields": {
+        "nombre": "IE 82562 PRIMARIA",
+        "ubigeo": 59
+    },
+    "model": "elecciones_app.centrovotacion",
+    "pk": 37
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "233600",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 1
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140322",
+        "electoresHabiles": 201,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 2
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "212433",
+        "electoresHabiles": 175,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 3
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140323",
+        "electoresHabiles": 274,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 4
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140327",
+        "electoresHabiles": 157,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 5
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "230410",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 6
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140329",
+        "electoresHabiles": 175,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 7
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140325",
+        "electoresHabiles": 166,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 8
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "228399",
+        "electoresHabiles": 190,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 9
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "255114",
+        "electoresHabiles": 160,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 10
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "247477",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 11
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140328",
+        "electoresHabiles": 160,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 12
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140324",
+        "electoresHabiles": 284,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 13
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "255067",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 14
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "140326",
+        "electoresHabiles": 168,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 15
+},
+{
+    "fields": {
+        "centroVotacion": 1,
+        "codigo": "214248",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 16
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "242901",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 17
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140306",
+        "electoresHabiles": 281,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 18
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140356",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 19
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "223247",
+        "electoresHabiles": 175,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 20
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140312",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 21
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140302",
+        "electoresHabiles": 281,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 22
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "219844",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 23
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "212432",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 24
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "210613",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 25
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "225691",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 26
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140308",
+        "electoresHabiles": 280,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 27
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140316",
+        "electoresHabiles": 282,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 28
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140303",
+        "electoresHabiles": 275,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 29
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "245450",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 30
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140311",
+        "electoresHabiles": 152,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 31
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140305",
+        "electoresHabiles": 279,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 32
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "217592",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 33
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140304",
+        "electoresHabiles": 280,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 34
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "221881",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 35
+},
+{
+    "fields": {
+        "centroVotacion": 2,
+        "codigo": "140301",
+        "electoresHabiles": 280,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 36
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140355",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 37
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "241570",
+        "electoresHabiles": 172,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 38
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "208168",
+        "electoresHabiles": 177,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 39
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140336",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 40
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140332",
+        "electoresHabiles": 169,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 41
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140335",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 42
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140333",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 43
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "239159",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 44
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "236196",
+        "electoresHabiles": 177,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 45
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140330",
+        "electoresHabiles": 168,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 46
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140334",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 47
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "140331",
+        "electoresHabiles": 172,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 48
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "204479",
+        "electoresHabiles": 173,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 49
+},
+{
+    "fields": {
+        "centroVotacion": 3,
+        "codigo": "200632",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 50
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "257006",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 51
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "227997",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 52
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "224120",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 53
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "234604",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 54
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "140371",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 55
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "261337",
+        "electoresHabiles": 192,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 56
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "267931",
+        "electoresHabiles": 172,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 57
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "238726",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 58
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "246599",
+        "electoresHabiles": 192,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 59
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "200631",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 60
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "140340",
+        "electoresHabiles": 285,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 61
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "140338",
+        "electoresHabiles": 267,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 62
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "140370",
+        "electoresHabiles": 173,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 63
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "241940",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 64
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "267930",
+        "electoresHabiles": 285,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 65
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "140369",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 66
+},
+{
+    "fields": {
+        "centroVotacion": 4,
+        "codigo": "212434",
+        "electoresHabiles": 189,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 67
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "232112",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 68
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "201207",
+        "electoresHabiles": 179,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 69
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "140341",
+        "electoresHabiles": 285,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 70
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "224732",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 71
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "212435",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 72
+},
+{
+    "fields": {
+        "centroVotacion": 5,
+        "codigo": "140343",
+        "electoresHabiles": 284,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 73
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "270924",
+        "electoresHabiles": 170,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 74
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "140345",
+        "electoresHabiles": 194,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 75
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "238715",
+        "electoresHabiles": 187,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 76
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "140348",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 77
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "251280",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 78
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "251287",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 79
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "140349",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 80
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "227523",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 81
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "140346",
+        "electoresHabiles": 164,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 82
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "246419",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 83
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "256961",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 84
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "280240",
+        "electoresHabiles": 173,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 85
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "225307",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 86
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "255113",
+        "electoresHabiles": 190,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 87
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "140347",
+        "electoresHabiles": 171,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 88
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "212436",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 89
+},
+{
+    "fields": {
+        "centroVotacion": 6,
+        "codigo": "201112",
+        "electoresHabiles": 187,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 90
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139811",
+        "electoresHabiles": 276,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 91
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "217606",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 92
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139809",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 93
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "244034",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 94
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139831",
+        "electoresHabiles": 288,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 95
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139827",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 96
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139810",
+        "electoresHabiles": 279,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 97
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139814",
+        "electoresHabiles": 276,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 98
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "237440",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 99
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139807",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 100
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139812",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 101
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139829",
+        "electoresHabiles": 291,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 102
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "234417",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 103
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139825",
+        "electoresHabiles": 284,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 104
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139824",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 105
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139828",
+        "electoresHabiles": 286,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 106
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "219913",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 107
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "240851",
+        "electoresHabiles": 297,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 108
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139832",
+        "electoresHabiles": 291,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 109
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "231772",
+        "electoresHabiles": 298,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 110
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139830",
+        "electoresHabiles": 293,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 111
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "229740",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 112
+},
+{
+    "fields": {
+        "centroVotacion": 7,
+        "codigo": "139826",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 113
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "200648",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 114
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139953",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 115
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139833",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 116
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "206103",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 117
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "222242",
+        "electoresHabiles": 179,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 118
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "227624",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 119
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "210722",
+        "electoresHabiles": 175,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 120
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139955",
+        "electoresHabiles": 189,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 121
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "209363",
+        "electoresHabiles": 255,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 122
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "214239",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 123
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139834",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 124
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139952",
+        "electoresHabiles": 174,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 125
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "139954",
+        "electoresHabiles": 179,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 126
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "224134",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 127
+},
+{
+    "fields": {
+        "centroVotacion": 8,
+        "codigo": "252884",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 128
+},
+{
+    "fields": {
+        "centroVotacion": 9,
+        "codigo": "900679",
+        "electoresHabiles": 210,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 129
+},
+{
+    "fields": {
+        "centroVotacion": 9,
+        "codigo": "900678",
+        "electoresHabiles": 210,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 130
+},
+{
+    "fields": {
+        "centroVotacion": 9,
+        "codigo": "900680",
+        "electoresHabiles": 209,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 131
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "200650",
+        "electoresHabiles": 279,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 132
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "139941",
+        "electoresHabiles": 274,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 133
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "256984",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 134
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "252890",
+        "electoresHabiles": 241,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 135
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "212410",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 136
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "139946",
+        "electoresHabiles": 272,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 137
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "139947",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 138
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "228887",
+        "electoresHabiles": 276,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 139
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "139948",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 140
+},
+{
+    "fields": {
+        "centroVotacion": 10,
+        "codigo": "221413",
+        "electoresHabiles": 275,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 141
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139846",
+        "electoresHabiles": 267,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 142
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139854",
+        "electoresHabiles": 266,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 143
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139849",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 144
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139848",
+        "electoresHabiles": 262,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 145
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139850",
+        "electoresHabiles": 269,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 146
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139847",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 147
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "212411",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 148
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139943",
+        "electoresHabiles": 264,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 149
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139853",
+        "electoresHabiles": 265,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 150
+},
+{
+    "fields": {
+        "centroVotacion": 11,
+        "codigo": "139851",
+        "electoresHabiles": 264,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 151
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139859",
+        "electoresHabiles": 269,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 152
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "214240",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 153
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139969",
+        "electoresHabiles": 282,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 154
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "232442",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 155
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "208654",
+        "electoresHabiles": 278,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 156
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "239802",
+        "electoresHabiles": 267,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 157
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139856",
+        "electoresHabiles": 272,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 158
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139874",
+        "electoresHabiles": 273,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 159
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "200607",
+        "electoresHabiles": 285,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 160
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139872",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 161
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139873",
+        "electoresHabiles": 286,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 162
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139866",
+        "electoresHabiles": 287,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 163
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139857",
+        "electoresHabiles": 268,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 164
+},
+{
+    "fields": {
+        "centroVotacion": 12,
+        "codigo": "139968",
+        "electoresHabiles": 282,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 165
+},
+{
+    "fields": {
+        "centroVotacion": 13,
+        "codigo": "418457",
+        "electoresHabiles": 250,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 166
+},
+{
+    "fields": {
+        "centroVotacion": 13,
+        "codigo": "417354",
+        "electoresHabiles": 259,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 167
+},
+{
+    "fields": {
+        "centroVotacion": 13,
+        "codigo": "226620",
+        "electoresHabiles": 262,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 168
+},
+{
+    "fields": {
+        "centroVotacion": 13,
+        "codigo": "203716",
+        "electoresHabiles": 261,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 169
+},
+{
+    "fields": {
+        "centroVotacion": 13,
+        "codigo": "139880",
+        "electoresHabiles": 255,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 170
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139898",
+        "electoresHabiles": 264,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 171
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139889",
+        "electoresHabiles": 256,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 172
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139896",
+        "electoresHabiles": 254,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 173
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139895",
+        "electoresHabiles": 244,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 174
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139884",
+        "electoresHabiles": 254,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 175
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139897",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 176
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139891",
+        "electoresHabiles": 248,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 177
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139890",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 178
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139883",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 179
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139885",
+        "electoresHabiles": 246,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 180
+},
+{
+    "fields": {
+        "centroVotacion": 14,
+        "codigo": "139886",
+        "electoresHabiles": 254,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 181
+},
+{
+    "fields": {
+        "centroVotacion": 15,
+        "codigo": "900681",
+        "electoresHabiles": 217,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 182
+},
+{
+    "fields": {
+        "centroVotacion": 15,
+        "codigo": "900682",
+        "electoresHabiles": 217,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 183
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "242142",
+        "electoresHabiles": 228,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 184
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "139908",
+        "electoresHabiles": 251,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 185
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "291966",
+        "electoresHabiles": 251,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 186
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "212412",
+        "electoresHabiles": 221,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 187
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "225817",
+        "electoresHabiles": 257,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 188
+},
+{
+    "fields": {
+        "centroVotacion": 16,
+        "codigo": "202652",
+        "electoresHabiles": 224,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 189
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "233090",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 190
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139960",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 191
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139951",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 192
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "256985",
+        "electoresHabiles": 167,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 193
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139914",
+        "electoresHabiles": 275,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 194
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139961",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 195
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "218051",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 196
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "212811",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 197
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139950",
+        "electoresHabiles": 179,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 198
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "200649",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 199
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139916",
+        "electoresHabiles": 275,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 200
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139919",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 201
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "252894",
+        "electoresHabiles": 192,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 202
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "223914",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 203
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "242261",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 204
+},
+{
+    "fields": {
+        "centroVotacion": 17,
+        "codigo": "139920",
+        "electoresHabiles": 283,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 205
+},
+{
+    "fields": {
+        "centroVotacion": 18,
+        "codigo": "900686",
+        "electoresHabiles": 192,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 206
+},
+{
+    "fields": {
+        "centroVotacion": 18,
+        "codigo": "900685",
+        "electoresHabiles": 195,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 207
+},
+{
+    "fields": {
+        "centroVotacion": 18,
+        "codigo": "900684",
+        "electoresHabiles": 195,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 208
+},
+{
+    "fields": {
+        "centroVotacion": 18,
+        "codigo": "900683",
+        "electoresHabiles": 195,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 209
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "223152",
+        "electoresHabiles": 287,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 210
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "263441",
+        "electoresHabiles": 280,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 211
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "212413",
+        "electoresHabiles": 279,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 212
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "139964",
+        "electoresHabiles": 156,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 213
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "139965",
+        "electoresHabiles": 283,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 214
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "139963",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 215
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "231777",
+        "electoresHabiles": 284,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 216
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "242106",
+        "electoresHabiles": 281,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 217
+},
+{
+    "fields": {
+        "centroVotacion": 19,
+        "codigo": "139921",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 218
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "139925",
+        "electoresHabiles": 249,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 219
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "139928",
+        "electoresHabiles": 252,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 220
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "139927",
+        "electoresHabiles": 243,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 221
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "227644",
+        "electoresHabiles": 248,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 222
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "401204",
+        "electoresHabiles": 250,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 223
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "283458",
+        "electoresHabiles": 250,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 224
+},
+{
+    "fields": {
+        "centroVotacion": 20,
+        "codigo": "139926",
+        "electoresHabiles": 248,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 225
+},
+{
+    "fields": {
+        "centroVotacion": 21,
+        "codigo": "900688",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 226
+},
+{
+    "fields": {
+        "centroVotacion": 21,
+        "codigo": "900689",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 227
+},
+{
+    "fields": {
+        "centroVotacion": 21,
+        "codigo": "900690",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 228
+},
+{
+    "fields": {
+        "centroVotacion": 21,
+        "codigo": "900687",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 229
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "139936",
+        "electoresHabiles": 167,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 230
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "227638",
+        "electoresHabiles": 189,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 231
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "298476",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 232
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "139937",
+        "electoresHabiles": 262,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 233
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "252883",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 234
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "139939",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 235
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "216644",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 236
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "331016",
+        "electoresHabiles": 177,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 237
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "243188",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 238
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "139938",
+        "electoresHabiles": 171,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 239
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "139971",
+        "electoresHabiles": 178,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 240
+},
+{
+    "fields": {
+        "centroVotacion": 22,
+        "codigo": "201025",
+        "electoresHabiles": 184,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 241
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "231385",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 242
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "276896",
+        "electoresHabiles": 190,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 243
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139935",
+        "electoresHabiles": 170,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 244
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "271594",
+        "electoresHabiles": 190,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 245
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "221567",
+        "electoresHabiles": 191,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 246
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139934",
+        "electoresHabiles": 167,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 247
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139932",
+        "electoresHabiles": 170,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 248
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139912",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 249
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "200625",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 250
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139911",
+        "electoresHabiles": 180,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 251
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "243701",
+        "electoresHabiles": 187,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 252
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "212415",
+        "electoresHabiles": 190,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 253
+},
+{
+    "fields": {
+        "centroVotacion": 23,
+        "codigo": "139933",
+        "electoresHabiles": 288,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 254
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "139958",
+        "electoresHabiles": 167,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 255
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "139959",
+        "electoresHabiles": 180,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 256
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "203169",
+        "electoresHabiles": 169,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 257
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "139957",
+        "electoresHabiles": 295,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 258
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "139956",
+        "electoresHabiles": 172,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 259
+},
+{
+    "fields": {
+        "centroVotacion": 24,
+        "codigo": "224376",
+        "electoresHabiles": 182,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 260
+},
+{
+    "fields": {
+        "centroVotacion": 25,
+        "codigo": "900612",
+        "electoresHabiles": 177,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 261
+},
+{
+    "fields": {
+        "centroVotacion": 25,
+        "codigo": "900611",
+        "electoresHabiles": 177,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 262
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135718",
+        "electoresHabiles": 261,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 263
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135726",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 264
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135725",
+        "electoresHabiles": 264,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 265
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135720",
+        "electoresHabiles": 259,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 266
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135707",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 267
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "216415",
+        "electoresHabiles": 275,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 268
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135712",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 269
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135706",
+        "electoresHabiles": 259,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 270
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135715",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 271
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135701",
+        "electoresHabiles": 259,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 272
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135710",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 273
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135724",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 274
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135727",
+        "electoresHabiles": 261,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 275
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "200693",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 276
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135711",
+        "electoresHabiles": 262,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 277
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135719",
+        "electoresHabiles": 257,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 278
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135722",
+        "electoresHabiles": 258,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 279
+},
+{
+    "fields": {
+        "centroVotacion": 26,
+        "codigo": "135728",
+        "electoresHabiles": 259,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 280
+},
+{
+    "fields": {
+        "centroVotacion": 27,
+        "codigo": "900610",
+        "electoresHabiles": 247,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 281
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135772",
+        "electoresHabiles": 270,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 282
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135779",
+        "electoresHabiles": 272,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 283
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135774",
+        "electoresHabiles": 264,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 284
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135773",
+        "electoresHabiles": 267,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 285
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "219250",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 286
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135777",
+        "electoresHabiles": 265,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 287
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135775",
+        "electoresHabiles": 265,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 288
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135778",
+        "electoresHabiles": 266,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 289
+},
+{
+    "fields": {
+        "centroVotacion": 28,
+        "codigo": "135780",
+        "electoresHabiles": 265,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 290
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "135795",
+        "electoresHabiles": 298,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 291
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "232155",
+        "electoresHabiles": 186,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 292
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "252745",
+        "electoresHabiles": 299,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 293
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "135794",
+        "electoresHabiles": 287,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 294
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "242091",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 295
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "135793",
+        "electoresHabiles": 288,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 296
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "217477",
+        "electoresHabiles": 198,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 297
+},
+{
+    "fields": {
+        "centroVotacion": 29,
+        "codigo": "200694",
+        "electoresHabiles": 187,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 298
+},
+{
+    "fields": {
+        "centroVotacion": 30,
+        "codigo": "900613",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 299
+},
+{
+    "fields": {
+        "centroVotacion": 30,
+        "codigo": "900614",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 300
+},
+{
+    "fields": {
+        "centroVotacion": 30,
+        "codigo": "900615",
+        "electoresHabiles": 193,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 301
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "221153",
+        "electoresHabiles": 257,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 302
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "202051",
+        "electoresHabiles": 253,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 303
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "135801",
+        "electoresHabiles": 240,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 304
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "229670",
+        "electoresHabiles": 241,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 305
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "135805",
+        "electoresHabiles": 249,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 306
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "244885",
+        "electoresHabiles": 248,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 307
+},
+{
+    "fields": {
+        "centroVotacion": 31,
+        "codigo": "239497",
+        "electoresHabiles": 247,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 308
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "203431",
+        "electoresHabiles": 181,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 309
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "135764",
+        "electoresHabiles": 295,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 310
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "135765",
+        "electoresHabiles": 172,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 311
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "135766",
+        "electoresHabiles": 176,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 312
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "227545",
+        "electoresHabiles": 188,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 313
+},
+{
+    "fields": {
+        "centroVotacion": 32,
+        "codigo": "252768",
+        "electoresHabiles": 185,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 314
+},
+{
+    "fields": {
+        "centroVotacion": 33,
+        "codigo": "135818",
+        "electoresHabiles": 245,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 315
+},
+{
+    "fields": {
+        "centroVotacion": 33,
+        "codigo": "223608",
+        "electoresHabiles": 246,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 316
+},
+{
+    "fields": {
+        "centroVotacion": 33,
+        "codigo": "200472",
+        "electoresHabiles": 251,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 317
+},
+{
+    "fields": {
+        "centroVotacion": 33,
+        "codigo": "238902",
+        "electoresHabiles": 245,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 318
+},
+{
+    "fields": {
+        "centroVotacion": 33,
+        "codigo": "135819",
+        "electoresHabiles": 243,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 319
+},
+{
+    "fields": {
+        "centroVotacion": 34,
+        "codigo": "900618",
+        "electoresHabiles": 244,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 320
+},
+{
+    "fields": {
+        "centroVotacion": 34,
+        "codigo": "900617",
+        "electoresHabiles": 246,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 321
+},
+{
+    "fields": {
+        "centroVotacion": 34,
+        "codigo": "900616",
+        "electoresHabiles": 246,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 322
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "242924",
+        "electoresHabiles": 287,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 323
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "209166",
+        "electoresHabiles": 280,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 324
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "135845",
+        "electoresHabiles": 281,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 325
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "229506",
+        "electoresHabiles": 271,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 326
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "135843",
+        "electoresHabiles": 285,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 327
+},
+{
+    "fields": {
+        "centroVotacion": 35,
+        "codigo": "135844",
+        "electoresHabiles": 279,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 328
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135832",
+        "electoresHabiles": 261,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 329
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135841",
+        "electoresHabiles": 255,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 330
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135837",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 331
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135822",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 332
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135846",
+        "electoresHabiles": 255,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 333
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135827",
+        "electoresHabiles": 263,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 334
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135840",
+        "electoresHabiles": 262,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 335
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135842",
+        "electoresHabiles": 254,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 336
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135834",
+        "electoresHabiles": 250,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 337
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135836",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 338
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135839",
+        "electoresHabiles": 256,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 339
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135831",
+        "electoresHabiles": 260,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 340
+},
+{
+    "fields": {
+        "centroVotacion": 36,
+        "codigo": "135824",
+        "electoresHabiles": 261,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 341
+},
+{
+    "fields": {
+        "centroVotacion": 37,
+        "codigo": "200494",
+        "electoresHabiles": 298,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 342
+},
+{
+    "fields": {
+        "centroVotacion": 37,
+        "codigo": "227464",
+        "electoresHabiles": 183,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 343
+},
+{
+    "fields": {
+        "centroVotacion": 37,
+        "codigo": "135812",
+        "electoresHabiles": 201,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 344
+},
+{
+    "fields": {
+        "centroVotacion": 37,
+        "codigo": "135811",
+        "electoresHabiles": 277,
+        "contabilizado": false
+    },
+    "model": "elecciones_app.grupovotacion",
+    "pk": 345
+}
+]

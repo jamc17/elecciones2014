@@ -1,24 +1,45 @@
 [
 {
     "fields": {
-        "nombre": "Regional"
+        "nombre": "Regional Presidente"
     },
     "model": "elecciones_app.ambito",
     "pk": 1
 },
 {
     "fields": {
-        "nombre": "Municipal Distrital"
+        "nombre": "Regional Consejero"
     },
     "model": "elecciones_app.ambito",
     "pk": 2
 },
 {
     "fields": {
-        "nombre": "Municipal Provincial"
+        "nombre": "Regional"
     },
     "model": "elecciones_app.ambito",
     "pk": 3
+},
+{
+    "fields": {
+        "nombre": "Municipal Provincial"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 4
+},
+{
+    "fields": {
+        "nombre": "Municipal Distrital"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 5
+},
+{
+    "fields": {
+        "nombre": "Municipal"
+    },
+    "model": "elecciones_app.ambito",
+    "pk": 6
 },
 {
     "fields": {
@@ -1429,180 +1450,5 @@
     },
     "model": "elecciones_app.ubigeo",
     "pk": 141
-},
-{
-    "fields": {
-        "nombre": "I.E.P. San Jos\u00e9 de Sucre",
-        "ubigeo": 30
-    },
-    "model": "elecciones_app.centrovotacion",
-    "pk": 1
-},
-{
-    "fields": {
-        "nombre": "I.E.P. Jos\u00e9 Galvez",
-        "ubigeo": 26
-    },
-    "model": "elecciones_app.centrovotacion",
-    "pk": 2
-},
-{
-    "fields": {
-        "centroVotacion": 1,
-        "codigo": "230491",
-        "electoresHabiles": 192
-    },
-    "model": "elecciones_app.grupovotacion",
-    "pk": 1
-},
-{
-    "fields": {
-        "centroVotacion": 1,
-        "codigo": "230492",
-        "electoresHabiles": 200
-    },
-    "model": "elecciones_app.grupovotacion",
-    "pk": 2
-},
-{
-    "fields": {
-        "centroVotacion": 1,
-        "codigo": "230493",
-        "electoresHabiles": 190
-    },
-    "model": "elecciones_app.grupovotacion",
-    "pk": 3
-},
-{
-    "fields": {
-        "centroVotacion": 2,
-        "codigo": "250021",
-        "electoresHabiles": 190
-    },
-    "model": "elecciones_app.grupovotacion",
-    "pk": 4
-},
-{
-    "fields": {
-        "centroVotacion": 2,
-        "codigo": "250022",
-        "electoresHabiles": 203
-    },
-    "model": "elecciones_app.grupovotacion",
-    "pk": 5
-},
-{
-    "fields": {
-        "nombre": "MAS",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 1
-},
-{
-    "fields": {
-        "nombre": "Fuerza Social",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 2
-},
-{
-    "fields": {
-        "nombre": "Cajamarca Siempre Verde",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 3
-},
-{
-    "fields": {
-        "nombre": "Dialogo Social",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 4
-},
-{
-    "fields": {
-        "nombre": "Acci\u00f3n Popular",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 5
-},
-{
-    "fields": {
-        "nombre": "APRA",
-        "logo": ""
-    },
-    "model": "elecciones_app.agrupacionpolitica",
-    "pk": 6
-},
-{
-    "fields": {
-        "ambito": 1,
-        "numVotos": null,
-        "agrupacionPolitica": 1,
-        "grupoVotacion": null,
-        "ubigeo": 30
-    },
-    "model": "elecciones_app.acta",
-    "pk": 1
-},
-{
-    "fields": {
-        "ambito": 2,
-        "numVotos": null,
-        "agrupacionPolitica": 1,
-        "grupoVotacion": null,
-        "ubigeo": 30
-    },
-    "model": "elecciones_app.acta",
-    "pk": 2
-},
-{
-    "fields": {
-        "ambito": 3,
-        "numVotos": null,
-        "agrupacionPolitica": 1,
-        "grupoVotacion": null,
-        "ubigeo": 30
-    },
-    "model": "elecciones_app.acta",
-    "pk": 3
-},
-{
-    "fields": {
-        "ambito": 2,
-        "numVotos": null,
-        "agrupacionPolitica": 5,
-        "grupoVotacion": null,
-        "ubigeo": 30
-    },
-    "model": "elecciones_app.acta",
-    "pk": 4
-},
-{
-    "fields": {
-        "ambito": 2,
-        "numVotos": null,
-        "agrupacionPolitica": 6,
-        "grupoVotacion": null,
-        "ubigeo": 26
-    },
-    "model": "elecciones_app.acta",
-    "pk": 5
-},
-{
-    "fields": {
-        "ambito": 2,
-        "numVotos": null,
-        "agrupacionPolitica": 1,
-        "grupoVotacion": null,
-        "ubigeo": 26
-    },
-    "model": "elecciones_app.acta",
-    "pk": 6
 }
 ]

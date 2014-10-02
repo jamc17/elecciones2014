@@ -1,11 +1,19 @@
 $(document).ready(function () {
+	function limpiaContenido() {
+		$("#contenido").html("<h4>Seleccione su local de votación y presione el botón Buscar</h4>");
+	}
+
 	function getDistritos(){
+		limpiaContenido();
+
 		$("#distrito").load("distritos/"+$(this).val(), function () {
 			getLocalesVotacion();
 		})
 	}
 
 	function getLocalesVotacion(e){
+		limpiaContenido();
+
 		var form = $("#formSelUbigeo");
 		var params = $(form).serialize();
 
@@ -77,6 +85,7 @@ $(document).ready(function () {
 
 
 	$("#formSelUbigeo").on("submit", getGruposVotacion);
+	$("#ambito").on("change", limpiaContenido);
 	$("#provincia").on("change", getDistritos);
 	$("#distrito").on("change", getLocalesVotacion);
 });

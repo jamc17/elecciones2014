@@ -6,15 +6,17 @@ from .models import Ambito, Ubigeo, CentroVotacion, GrupoVotacion, AgrupacionPol
 
 
 def index(request):
-	ambitos = Ambito.objects.all()
+	ambitos = Ambito.objects.all().exclude(Q(pk = 1) | Q(pk = 2) | Q(pk = 6)).order_by("pk")
 	regiones = Ubigeo.objects.filter(codDep = '06', codPro = '00', codDis="00")
-	provincias = Ubigeo.objects.filter(codDep = "06", codDis = "00").exclude(codPro = '00')
+	provincias = Ubigeo.objects.filter(codDep = "06", codDis = "00").exclude(codPro = '00').order_by("nombre")
+
 
 	if (request.GET.get("ambito") and request.GET.get("provincia") and request.GET.get("distrito")) :
 		distrito = Ubigeo.objects.get(pk = request.GET.get("distrito"))
-		centrosVotacion = CentroVotacion.objects.filter(ubigeo = distrito)
+		centrosVotacion = CentroVotacion.objects.filter(ubigeo = distrito).order_by("nombre")
 		return render(request, "elecciones_app/centrosVotacion.html", locals())
 	
+
 	else:
 		return render(request, "elecciones_app/index.html", locals())
 
@@ -29,7 +31,7 @@ def gruposVotacion(request, idCentroVotacion):
 
 def distritos(request, idProv):
 	provincia = Ubigeo.objects.get(pk = idProv)
-	distritos = Ubigeo.objects.filter(codDep= '06', codPro = provincia.codPro).exclude(codDis = '00')
+	distritos = Ubigeo.objects.filter(codDep= '06', codPro = provincia.codPro).exclude(codDis = '00').order_by("nombre")
 	return render(request, "elecciones_app/distritos.html", locals())
 
 
@@ -38,17 +40,36 @@ def registrarActa(request, idGrupoVotacion, idDistrito, idAmbito):
 	distrito = Ubigeo.objects.get(pk = idDistrito)
 	ambito = Ambito.objects.get(pk = idAmbito)
 
-	agrupacionesPoliticas = AgrupacionPolitica.objects.filter(ubigeo__pk = idDistrito, apoliticaubigeo__ambito__pk = idAmbito)
+	if ambito.nombre == "Regional":
+		agrupacionesPoliticas = AgrupacionPolitica.objects.filter(
+			ubigeo__pk = idDistrito,
+			apoliticaubigeo__ambito__pk = 1
+		)
 
 
-	actas = Acta.objects.filter(
-		Q(APoliticaUbigeo__ubigeo = distrito),
-		Q(APoliticaUbigeo__ambito__pk = 1) | Q(APoliticaUbigeo__ambito__pk = 2),
-		Q(grupoVotacion = grupoVotacion)
-	).order_by("APoliticaUbigeo__ambito__pk")
+		actas = Acta.objects.filter(
+			Q(APoliticaUbigeo__ubigeo = distrito),
+			Q(APoliticaUbigeo__ambito__pk = 1) | Q(APoliticaUbigeo__ambito__pk = 2),
+			Q(grupoVotacion = grupoVotacion)
+		).order_by("APoliticaUbigeo__ambito__pk")
 
-	if ambito.nombre == "Presidente Regional" or ambito.nombre == "Consejero Regional":
-		return render(request, "elecciones_app/registrarActa.html", locals())
+		template = "elecciones_app/registrarActa.html"
+
+	# elif ambito.nombre == "Municipal Provincial":
+	else:
+		agrupacionesPoliticas = AgrupacionPolitica.objects.filter(
+			ubigeo__pk = idDistrito,
+			apoliticaubigeo__ambito__pk = idAmbito
+		)
+
+		actas = Acta.objects.filter(
+			APoliticaUbigeo__ubigeo = distrito,
+			APoliticaUbigeo__ambito__pk = ambito.pk,
+			grupoVotacion = grupoVotacion
+		)
+		template = "elecciones_app/registrarActaProvincial.html"
+
+	return render(request, template, locals())
 
 
 def registrarActaSubmit(request):

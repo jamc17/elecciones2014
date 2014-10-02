@@ -1,0 +1,1 @@
+web: gunicorn elecciones2014.wsgi

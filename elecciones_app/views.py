@@ -98,6 +98,55 @@ def registrarActaSubmit(request):
 		response_data['message'] = "Error: " + str(e)
 
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
+
+
+def cargarApoliticasUbigeo(request):
+	aps = AgrupacionPolitica.objects.filter(
+		Q(pk = 12) | Q(pk = 20) | Q(pk = 26) | Q(pk = 28) |Q(pk = 29) | Q(pk = 30) | Q(pk = 32) | Q(pk = 34)| Q(pk = 35)| Q(pk = 36)| Q(pk = 37)
+		)
+	ubigeos = Ubigeo.objects.exclude(codDis = "00")
+	ambitos = Ambito.objects.filter(
+		Q(pk = 1) | Q(pk = 2)
+		)
+	try:
+		for ambito in ambitos:
+			for ap in aps:
+				for ubigeo in ubigeos:
+					apu = APoliticaUbigeo()
+					apu.ubigeo = ubigeo
+					apu.agrupacionPolitica = ap
+					apu.ambito = ambito
+					apu.save()
+
+		return HttpResponse("Dataos cargados correctamente")
+
+	except Exception, e:
+		raise e
+
+
+def cargarActas(request):
+	# gruposVotacion = GrupoVotacion.objects.all()
+	apus = APoliticaUbigeo.objects.filter(ubigeo_id = 30)
+	# apus = APoliticaUbigeo.objects.filter()
+	
+	for apu in apus:
+		ubigeo = apu.ubigeo
+		locales = ubigeo.centrovotacion_set.all()
+		for local in locales:
+			mesas = local.grupovotacion_set.all()
+			for mesa in mesas:
+				acta = Acta()
+				acta.APoliticaUbigeo = apu
+				acta.grupoVotacion = mesa
+				acta.save()
+
+
+	return HttpResponse("Llamada")
+
+
+
+	
+
 	
 
 

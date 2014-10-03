@@ -1,0 +1,19 @@
+<table>
+	<thead>
+		<th>Organización Política</th>
+		<th>Numero Votos</th>
+	</thead>
+	<tbody>
+		{% for aPolitica in apus %}
+			<tr>
+				<td>
+				{{aPolitica.agrupacionPolitica.nombre | lower | capfirst }}	
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+		{% endfor %}
+		
+	</tbody>
+</table>

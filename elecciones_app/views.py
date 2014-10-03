@@ -29,6 +29,18 @@ def gruposVotacion(request, idCentroVotacion):
 	return render(request, "elecciones_app/gruposVotacion.html", locals())
 
 
+def getResumenCentroVotacion(request, idCentroVotacion, idAmbito):
+	centroVotacion = CentroVotacion.objects.get(pk = idCentroVotacion)
+	ubigeo = centroVotacion.ubigeo
+	ambito = Ambito.objects.get(pk =idAmbito)
+	
+	if ambito.nombre == "Regional":
+		print "estamos aca"
+		apus = ubigeo.apoliticaubigeo_set.filter(Q(ambito__pk = 1)| Q(ambito__pk = 2))
+
+	return render(request, "elecciones_app/resumenCentroVotacion.html", locals())
+
+
 def distritos(request, idProv):
 	provincia = Ubigeo.objects.get(pk = idProv)
 	distritos = Ubigeo.objects.filter(codDep= '06', codPro = provincia.codPro).exclude(codDis = '00').order_by("nombre")
@@ -102,7 +114,7 @@ def registrarActaSubmit(request):
 
 def cargarApoliticasUbigeo(request):
 	aps = AgrupacionPolitica.objects.filter(
-		Q(pk = 12) | Q(pk = 20) | Q(pk = 26) | Q(pk = 28) |Q(pk = 29) | Q(pk = 30) | Q(pk = 32) | Q(pk = 34)| Q(pk = 35)| Q(pk = 36)| Q(pk = 37)
+		Q(pk = 12) | Q(pk = 20) | Q(pk = 26) | Q(pk = 28) |Q(pk = 29) | Q(pk = 30) | Q(pk = 32) | Q(pk = 34)| Q(pk = 35)| Q(pk = 36)| Q(pk = 37) | Q(pk = 38)
 		)
 	ubigeos = Ubigeo.objects.exclude(codDis = "00")
 	ambitos = Ambito.objects.filter(
@@ -126,7 +138,8 @@ def cargarApoliticasUbigeo(request):
 
 def cargarActas(request):
 	# gruposVotacion = GrupoVotacion.objects.all()
-	apus = APoliticaUbigeo.objects.filter(ubigeo_id = 30)
+	# apus = APoliticaUbigeo.objects.filter(Q(ambito_id = 1) | Q(ambito_id = 2) | Q(ambito_id = 5))
+	apus = APoliticaUbigeo.objects.filter(Q(ambito_id = 4))
 	# apus = APoliticaUbigeo.objects.filter()
 	
 	for apu in apus:
@@ -138,6 +151,7 @@ def cargarActas(request):
 				acta = Acta()
 				acta.APoliticaUbigeo = apu
 				acta.grupoVotacion = mesa
+				acta.numVotos = 0
 				acta.save()
 
 

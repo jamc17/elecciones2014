@@ -1,4 +1,29 @@
 $(document).ready(function () {
+	function numerosPositivos () {
+		$("input[name=numVotos]").keydown(function (event) {
+            if (event.shiftKey) {
+                event.preventDefault();
+            }
+
+            if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
+            }
+            else {
+                if (event.keyCode < 95) {
+                    if (event.keyCode < 48 || event.keyCode > 57) {
+                        event.preventDefault();
+                    }
+                }
+                else {
+                    if (event.keyCode < 96 || event.keyCode > 105) {
+                        event.preventDefault();
+                    }
+                }
+            }
+        });
+	}
+	
+
+
 	function limpiaContenido() {
 		$("#contenido").html("<h4>Seleccione su local de votación y presione el botón Buscar</h4>");
 	}
@@ -20,6 +45,18 @@ $(document).ready(function () {
 		$("#centroVotacion").load("/?" + params);
 	}
 
+	function getResumenCentroVotacion(e){
+		e.preventDefault();
+		var ambito = $("#ambito").val();
+		var cv = $("#centroVotacion").val();
+		var url = "getResumenCentroVotacion/" + cv +"/"  + ambito;
+		
+		$("#resumenCentroVotacion").load(url, function () {
+
+		})
+	}
+
+
 	function getGruposVotacion(e){
 		if (e) {
 			e.preventDefault();	
@@ -37,6 +74,7 @@ $(document).ready(function () {
 
 		$("#contenido").load(url, function () {
 			$(".grupoVotacion").on("click", getActa);
+			$("#btnResumenCentroVotacion").on("click", getResumenCentroVotacion)
 		});
 	}
 
@@ -49,6 +87,7 @@ $(document).ready(function () {
 		$("#contenido").load(url, function () {
 			$("#formRegistrarActa").on("submit", registrarActa);
 			$("#resetForm").on("click", getGruposVotacion);
+			numerosPositivos();
 		});
 	}
 

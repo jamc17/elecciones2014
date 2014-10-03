@@ -50,7 +50,7 @@ class APoliticaUbigeo(models.Model):
 	ambito = models.ForeignKey(Ambito)
 
 	def __unicode__(self):
-		return self.ambito.nombre + " -> " + self.ubigeo.nombre + " -> " + self.agrupacionPolitica.nombre 
+		return self.ambito.nombre + " -> " + self.ubigeo.nombre + " -> " + self.agrupacionPolitica.nombre
 
 
 class Acta(models.Model):

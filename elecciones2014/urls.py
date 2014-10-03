@@ -11,8 +11,10 @@ urlpatterns = patterns('',
     url(r'^gruposVotacion/(\d+)$', 'elecciones_app.views.gruposVotacion', name='gruposVotacion'),
     url(r'^registrarActa/(\d+)/(\d+)/(\d+)$', 'elecciones_app.views.registrarActa', name='registrarActa'),
     url(r'^registrarActaSubmit/$', 'elecciones_app.views.registrarActaSubmit', name='registrarActaSubmit'),
-    # url(r'^blog/', include('blog.urls')),
-
+    
+	url(r'^getResumenCentroVotacion/(\d+)/(\d+)$', 'elecciones_app.views.getResumenCentroVotacion', name='resumenCentroVotacion'),
+    
+	# Acciones Administrativas
     url(r'^cargarApoliticasUbigeo$', 'elecciones_app.views.cargarApoliticasUbigeo', name='carga1'),
     url(r'^cargarActas$', 'elecciones_app.views.cargarActas', name='carga2'),
 

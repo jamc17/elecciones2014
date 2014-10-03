@@ -105,8 +105,8 @@ TEMPLATE_DIRS= (os.path.join(BASE_DIR, "templates"),)
 
 
 
-import dj_database_url
+# import dj_database_url
  
-DATABASES['default'] = dj_database_url.config()
+# DATABASES['default'] = dj_database_url.config()
 
 

@@ -57,23 +57,23 @@ WSGI_APPLICATION = 'elecciones2014.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-#         'NAME': 'd5h59vgo9middo',                      # Or path to database file if using sqlite3.
-#         'USER': 'twpfchjdrssrlj',                      # Not used with sqlite3.
-#         'PASSWORD': 'e04aKAms1HeQ_ka6-oaFiFw5vS',                  # Not used with sqlite3.
-#         'HOST': 'ec2-54-204-47-58.compute-1.amazonaws.com',                      # Set to empty string for localhost. Not used with sqlite3.
-#         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'd5h59vgo9middo',                      # Or path to database file if using sqlite3.
+        'USER': 'twpfchjdrssrlj',                      # Not used with sqlite3.
+        'PASSWORD': 'e04aKAms1HeQ_ka6-oaFiFw5vS',                  # Not used with sqlite3.
+        'HOST': 'ec2-54-204-47-58.compute-1.amazonaws.com',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
 
 
 # Internationalization

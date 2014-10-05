@@ -1,0 +1,50 @@
+<h3 class="center-text">{{ambito.nombre}}</h3>
+<div class="row">
+	<h5 class="small-8 columns">
+		Centro Votacion: {{grupoVotacion.centroVotacion.nombre}}
+	</h5>
+	<h5 class="small-2 columns">
+		Mesa: {{grupoVotacion.codigo}}
+	</h5>
+	<h5 class="small-2 columns">
+		Electores: <span id="electores">{{grupoVotacion.electoresHabiles}}</span>	
+	</h5>
+</div>
+<form action="" id="formRegistrarActa" method="POST">
+	<table class="acta">
+		<thead>
+			<tr>
+				<th class="orgP center-text">ORGANIZACIONES POLÍTICAS</th>
+				<th class="votos center-text">Total de Votos Provincial</th>
+				<th class="votos center-text">Total de Votos Distrital</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for agrupacionPolitica in agrupacionesPoliticas %}
+			<tr>
+				<td>{{agrupacionPolitica}}</td>
+				{% for acta in actas %}
+					{% if acta.APoliticaUbigeo.agrupacionPolitica = agrupacionPolitica %}
+						<td>
+							<input type="text" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}" class="numVotos" data-partido="{{acta.APoliticaUbigeo.agrupacionPolitica.pk}}" />
+						</td>
+					{% endif %}
+				{% endfor %}
+			</tr>
+		{% endfor %}
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="Guardar" class="button radius" />
+				<input type="reset" id="resetForm" value="Cancelar" class="button radius secondary" />
+				</td>
+				<td>
+					<input type="button" id="resetActa" value="Resetear Acta" class="button radius warning" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<input type="hidden" id="grupoVotacion" value="{{grupoVotacion.pk}}" />
+	<input type="hidden" id="centroVotacion" value="{{grupoVotacion.centroVotacion.pk}}" />
+	{% csrf_token %}
+	
+</form>

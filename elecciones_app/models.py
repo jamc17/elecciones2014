@@ -12,6 +12,7 @@ class Ubigeo(models.Model):
 	codPro = models.CharField(max_length=2)
 	codDis = models.CharField(max_length=2)
 	nombre = models.CharField(max_length=70)
+	distritoCapital = models.BooleanField(default= False)
 
 	def __unicode__(self):
 		return self.nombre

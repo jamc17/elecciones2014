@@ -15,19 +15,25 @@
 				{% for acta in actas %}
 					{% if acta.APoliticaUbigeo.agrupacionPolitica = agrupacionPolitica %}
 						<td>
-							<input type="number" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}" />
+							<input type="text" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}" />
 						</td>
 					{% endif %}
 				{% endfor %}
 			</tr>
 		{% endfor %}
+		<tr>
+			<td>
+				<input type="submit" value="Guardar" class="button radius" />
+				<input type="reset" id="resetForm" value="Cancelar" class="button radius secondary" />
+			</td>
+			<td>
+				<input type="button" id="resetActa" value="Resetear Acta" class="button radius warning" />
+			</td>
+		</tr>
 		</tbody>
 	</table>
 	<input type="hidden" id="grupoVotacion" value="{{grupoVotacion.pk}}" />
 	<input type="hidden" id="centroVotacion" value="{{grupoVotacion.centroVotacion.pk}}" />
 	{% csrf_token %}
-	<div>
-		<input type="submit" value="Guardar" class="button radius" />
-		<input type="reset" id="resetForm" value="Cancelar" class="button radius secondary" />
-	</div>
+	
 </form>

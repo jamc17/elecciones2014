@@ -3,7 +3,7 @@ from .models import Ambito, Ubigeo, CentroVotacion, AgrupacionPolitica, GrupoVot
 
 
 class UbigeoAdmin(admin.ModelAdmin):
-	list_display = ("codDep", "codPro", "codDis", "nombre", )
+	list_display = ("codDep", "codPro", "codDis", "nombre", "distritoCapital")
 
 admin.site.register(Ambito)
 admin.site.register(Ubigeo, UbigeoAdmin)

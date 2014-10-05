@@ -457,7 +457,9 @@ def resetDatabaseEleccionesRM(request):
 	return HttpResponse("Datos limpiados correctamente")
 
 
-
+def prueba(request):
+	acta = Acta.objects.get(pk = 1)
+	HttpResponse(acta.numVotos + " - " + acta.pk + " - " + acta.estado)
 
 
 

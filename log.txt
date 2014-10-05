@@ -1,0 +1,45 @@
+from elecciones_app.models import *
+grupoVotacion = GrupoVotacion.objects.filter(codigo = 230491)
+grupoVotacion
+# OUT: [<GrupoVotacion: 230491>]
+grupoVotacion = grupoVotacion[0]
+ambito = Ambito.objects.get(pk = 5)
+ubigeo = Ubigeo.objects.get(pk = 30)
+apus = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito = ambito)
+apus.count()
+# OUT: 12
+apu = apus[0]
+apu
+# OUT: <APoliticaUbigeo: Municipal Distrital -> SUCRE -> FUERZA POPULAR>
+acta = Actas.objects.filter(APoliticaUbigeo = apu, grupoVotacion = grupoVotacion)
+# OUT: Traceback (most recent call last):
+# OUT:   File "<input>", line 1, in <module>
+# OUT: NameError: name 'Actas' is not defined
+acta = Acta.objects.filter(APoliticaUbigeo = apu, grupoVotacion = grupoVotacion)
+acta
+# OUT: Traceback (most recent call last):
+# OUT:   File "<input>", line 1, in <module>
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/query.py", line 116, in __repr__
+# OUT:     data = list(self[:REPR_OUTPUT_SIZE + 1])
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/query.py", line 141, in __iter__
+# OUT:     self._fetch_all()
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/query.py", line 966, in _fetch_all
+# OUT:     self._result_cache = list(self.iterator())
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/query.py", line 265, in iterator
+# OUT:     for row in compiler.results_iter():
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 700, in results_iter
+# OUT:     for rows in self.execute_sql(MULTI):
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 786, in execute_sql
+# OUT:     cursor.execute(sql, params)
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/backends/utils.py", line 81, in execute
+# OUT:     return super(CursorDebugWrapper, self).execute(sql, params)
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+# OUT:     return self.cursor.execute(sql, params)
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+# OUT:     six.reraise(dj_exc_type, dj_exc_value, traceback)
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+# OUT:     return self.cursor.execute(sql, params)
+# OUT:   File "/Users/jamc/.virtualenvs/elecciones2014/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 485, in execute
+# OUT:     return Database.Cursor.execute(self, query, params)
+# OUT: OperationalError: no such column: elecciones_app_acta.estado
+

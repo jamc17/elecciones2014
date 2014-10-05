@@ -30,7 +30,7 @@ class GrupoVotacion(models.Model):
 	codigo = models.CharField(max_length=8)
 	centroVotacion = models.ForeignKey(CentroVotacion)
 	electoresHabiles = models.IntegerField(null=True, blank=True)
-	contabilizado = models.BooleanField(default = False)
+	# contabilizado = models.BooleanField(default = False)
 
 	def __unicode__(self):
 		return self.codigo
@@ -58,6 +58,7 @@ class Acta(models.Model):
 	APoliticaUbigeo = models.ForeignKey(APoliticaUbigeo)
 	grupoVotacion = models.ForeignKey(GrupoVotacion, null=True, blank=True)
 	numVotos = models.IntegerField(null=True, blank=True)
+	estado = models.SmallIntegerField(default=0)
 
 	def __unicode__(self):
 		return self.APoliticaUbigeo.ubigeo.nombre + " -> " + self.grupoVotacion.codigo + " - " + str(self.numVotos)

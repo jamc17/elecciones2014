@@ -1,19 +1,36 @@
 <table>
 	<thead>
+		<td>#</td>
 		<th>Organización Política</th>
-		<th>Numero Votos</th>
+		
+		{% if ambito.nombre == "Regional" %}
+			<th>Votos Presidente</th>
+			<th>Votos Consejero</th>
+		{% else %}
+			<th>Num Votos</th>
+		{% endif %}
+
 	</thead>
 	<tbody>
 		{% for aPolitica in apus %}
 			<tr>
+				<td>{{forloop.counter}}</td>
 				<td>
 				{{aPolitica.agrupacionPolitica.nombre | lower | capfirst }}	
 				</td>
 				<td>
-					
+				{{aPolitica.numVotos}}
 				</td>
+				{% if ambito.nombre == "Regional" %}
+					{% for apuCons in apusCons %}
+						{% if aPolitica.agrupacionPolitica == apuCons.agrupacionPolitica %}
+							<td>
+								{{apuCons.numVotos}}
+							</td>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
 			</tr>
 		{% endfor %}
-		
 	</tbody>
 </table>

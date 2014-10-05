@@ -28,9 +28,14 @@
 					<td><a href="registrarActa/{{grupoVotacion.pk}}" class="grupoVotacion">{{grupoVotacion}}</a></td>
 					<td>{{grupoVotacion.electoresHabiles}}</td>
 					<td>
-					{% if grupoVotacion.contabilizado %}
-						<span class="icon-check"></span>
-					{% endif %}
+					{% for actaGV in actasGV %}
+						{% if actaGV.grupoVotacion == grupoVotacion %}
+							{% if actaGV.estado == 1 %}
+								<span class="icon-check"></span>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+						
 					</td>
 				</tr>
 			{% empty %}
@@ -42,7 +47,7 @@
 		</table>
 	</div>
 	<div class="small-6 columns">
-		<a href="#" class="button tiny" id="btnResumenCentroVotacion">Ver Avance</a>
+		<a href="#" class="button tiny" id="btnResumenCentroVotacion">Avance Centro Votación</a>
 		<div id="resumenCentroVotacion"></div>
 	</div>
 </div>

@@ -105,6 +105,8 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS= (os.path.join(BASE_DIR, "templates"),)
 
 
+LOGIN_URL = 'viewLogin'
+
 
 # import dj_database_url
  

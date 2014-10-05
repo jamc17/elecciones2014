@@ -1,0 +1,20 @@
+<table>
+	<thead>
+		<td>#</td>
+		<th>Organización Política</th>
+		<th>Num Votos</th>
+	</thead>
+	<tbody>
+		{% for aPolitica in apus %}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<td>
+				{{aPolitica.agrupacionPolitica.nombre | lower | capfirst }}	
+				</td>
+				<td>
+				{{aPolitica.numVotos}}
+				</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>

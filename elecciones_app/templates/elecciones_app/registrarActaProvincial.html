@@ -25,7 +25,7 @@
 				{% for acta in actas %}
 					{% if acta.APoliticaUbigeo.agrupacionPolitica = agrupacionPolitica %}
 						<td>
-							<input type="text" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}" />
+							<input type="text" name="numVotos" value="{{acta.numVotos}}"  data-acta="{{acta.pk}}" data-ambito="{{acta.APoliticaUbigeo.ambito.nombre}}"  data-partido="{{acta.APoliticaUbigeo.agrupacionPolitica.pk}}" />
 						</td>
 					{% endif %}
 				{% endfor %}

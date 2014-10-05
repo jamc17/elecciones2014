@@ -56,13 +56,18 @@ $(document).ready(function () {
 		$("#centroVotacion").html("<option value='0'>-- Local Votación --</option>");
 	}
 
+	function limpiaListaLocales() {
+		$("#centroVotacion").html("<option value='0'>-- Local Votación --</option>");
+	}
+
 	function limpiaContenido() {
-		$("#contenido").html("<h4>Seleccione su local de votación y presione el botón Buscar</h4>");
+		$("#contenido").html("<h4>Seleccione sus opciones y presione el botón Buscar</h4>");
 	}
 
 	function getDistritos(){
 		limpiaContenido();
 		var ambito = $("#ambito").val();
+		var pagina = $("#pagina").val();
 
 		var provincia = $(this).val();
 		if (provincia == 0) {
@@ -71,12 +76,18 @@ $(document).ready(function () {
 		}
 
 		$("#distrito").load("distritos/"+provincia+"/" + ambito, function () {
-			getLocalesVotacion();
+			// getLocalesVotacion();
 		})
 	}
 
 	function getLocalesVotacion(e){
 		limpiaContenido();
+
+		var distrito = $(this).val();
+		if (distrito == 0) {
+			limpiaListaLocales();
+			return ;
+		}
 
 		var form = $("#formSelUbigeo");
 		var params = $(form).serialize();
@@ -101,14 +112,16 @@ $(document).ready(function () {
 			e.preventDefault();	
 		}
 		
-		var centroVotacion = $("#centroVotacion").val()
+		var centroVotacion = $("#centroVotacion").val();
+		var ambito = $("#ambito").val();
+		var ubigeo = $("#distrito").val();
 
 		if (centroVotacion === '0') {
 			alert("Seleccione un centro de votación");
 			return;
 		}
 
-		var url = "gruposVotacion/" + centroVotacion
+		var url = "gruposVotacion/" + centroVotacion + "/" + ambito + "/" + ubigeo
 		
 
 		$("#contenido").load(url, function () {
@@ -141,10 +154,12 @@ $(document).ready(function () {
 				var input = $(inputsVotos[i]);
 				var parent = input.parent()
 				nodePrev = parent.prev().children()[0];
-				console.log($(nodePrev));
-				if (nodePrev == undefined) {
+				
+				if (typeof nodePrev == "undefined") {
+					
 					input.detach();
-					parent.append(input);
+					var newTd = $("<td></td>").append(input);
+					parent.parent().append(newTd);
 				}
 			}
 		}
@@ -221,10 +236,32 @@ $(document).ready(function () {
 	    });
 	}
 
+	function getReportes(e){
+		if (e) {
+			e.preventDefault();
+		}
+		
+		var ambito = $("#ambito").val();
+		var distrito = $("#distrito").val();
+		var provincia = $("#provincia").val();
+		
+
+		// var url = "getReporteUbigeo/?";
+
+		url = "getReporteUbigeo/"+ ambito + "/" + provincia + "/" + distrito
+
+		$("#contenido").load(url, function () {
+			
+		});
+		
+	}
+
 
 	$("#formSelUbigeo").on("submit", getGruposVotacion);
+	$("#formSelUbigeoReportes").on("submit", getReportes);
 	$("#ambito").on("change", limpiaContenido);
 	$("#ambito").on("change", limpiaListas);
 	$("#provincia").on("change", getDistritos);
 	$("#distrito").on("change", getLocalesVotacion);
+	$("#centroVotacion").on("change", limpiaContenido);
 });

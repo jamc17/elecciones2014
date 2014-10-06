@@ -391,12 +391,9 @@ def cargarActasSanJuan():
 
 
 def limpiaTotalesMunicipales(request):
-
 	apus = APoliticaUbigeo.objects.filter(Q(agrupacionPolitica__pk = 38), Q(ambito_id = 5)| Q(ambito_id = 4))
 	apus.delete()
 	return HttpResponse("Delete")
-
-
 
 
 @login_required

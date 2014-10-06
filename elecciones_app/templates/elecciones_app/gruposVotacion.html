@@ -17,6 +17,7 @@
 		<table>
 			<thead>
 				<tr>
+					<th>#</th>
 					<th width="150">Mesa</th>
 					<th width="50">Nro Electores</th>
 					<th width="10">Estado</th>
@@ -25,6 +26,7 @@
 			<tbody>
 			{% for grupoVotacion in gruposVotacion %}
 				<tr>
+					<td>{{forloop.counter}}</td>
 					<td><a href="registrarActa/{{grupoVotacion.pk}}" class="grupoVotacion">{{grupoVotacion}}</a></td>
 					<td>{{grupoVotacion.electoresHabiles}}</td>
 					<td>

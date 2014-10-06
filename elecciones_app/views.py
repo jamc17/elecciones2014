@@ -93,7 +93,7 @@ def gruposVotacion(request, idCentroVotacion, idAmbito, idUbigeo):
 	apu = apus[0]
 	# grupoVotacionActas = GrupoVotacion.acta_set.filter(APoliticaUbigeo = apu)
 	actasGV =  apu.acta_set.all();
-	gruposVotacion = GrupoVotacion.objects.filter(centroVotacion = centroVotacion)
+	gruposVotacion = GrupoVotacion.objects.filter(centroVotacion = centroVotacion).order_by("codigo")
 	totalElectores = gruposVotacion.aggregate(cantidad = Sum('electoresHabiles'))
 
 	return render(request, "elecciones_app/gruposVotacion.html", locals())
@@ -390,6 +390,15 @@ def cargarActasSanJuan():
 	return HttpResponse("Cargadas Actas")
 
 
+def limpiaTotalesMunicipales(request):
+
+	apus = APoliticaUbigeo.objects.filter(Q(agrupacionPolitica__pk = 38), Q(ambito_id = 5)| Q(ambito_id = 4))
+	apus.delete()
+	return HttpResponse("Delete")
+
+
+
+
 @login_required
 def cargaTotalesMunicipales(request):
 	# apus = APoliticaUbigeo.objects.filter(Q(ambito_id = 4) | Q(ambito_id = 5))
@@ -434,6 +443,8 @@ def cargaActasTotalesMunicipales(request):
 
 	except Exception, e:
 		raise e
+
+
 
 
 @login_required

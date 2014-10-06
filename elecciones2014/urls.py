@@ -30,8 +30,8 @@ urlpatterns = patterns('',
 
     url(r'^resetDatabaseEleccionesRM$', 'elecciones_app.views.resetDatabaseEleccionesRM', name='resetDatabaseEleccionesRM'),
 
-    url(r'^prueba$', 'elecciones_app.views.prueba', name='prueba'),
     
+    url(r'^limpiaTotalesMunicipales$', 'elecciones_app.views.limpiaTotalesMunicipales', name='limpiaTotalesMunicipales'),
     
 
     url(r'^limpiaActasSanJuan$', 'elecciones_app.views.limpiaActasSanJuan', name='limpiarActas'),

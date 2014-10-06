@@ -259,13 +259,13 @@ def getReporteUbigeo(request, idAmbito, idProvincia = 0, idDistrito = 0):
 
 	if idProvincia != "0":
 		ubigeo = Ubigeo.objects.get(pk = idProvincia)
-		aPoliticas = AgrupacionPolitica.objects.filter(apoliticaubigeo__ambito = ambito, apoliticaubigeo__ubigeo__codPro = ubigeo.codPro).annotate(numVotos = Sum("apoliticaubigeo__acta__numVotos"))
+		aPoliticas = AgrupacionPolitica.objects.filter(apoliticaubigeo__ambito = ambito, apoliticaubigeo__ubigeo__codPro = ubigeo.codPro).annotate(numVotos = Sum("apoliticaubigeo__acta__numVotos")).order_by("pk")
 		template = "elecciones_app/reportesRegional.html"
 		
 
 	if idDistrito != "0":
 		ubigeo = Ubigeo.objects.get(pk = idDistrito)
-		apus = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito = ambito).annotate(numVotos = Sum("acta__numVotos"))
+		apus = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito = ambito).annotate(numVotos = Sum("acta__numVotos")).order_by('agrupacionPolitica_id')
 		template = "elecciones_app/reportesDistrito.html"
 
 	return render(request, template, locals())

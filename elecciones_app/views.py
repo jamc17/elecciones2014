@@ -422,7 +422,7 @@ def cargaTotalesMunicipales(request):
 
 @login_required
 def cargaActasTotalesMunicipales(request):
-	apus = APoliticaUbigeo.objects.filter(Q(ambito_id = 4) | Q(ambito_id = 5), Q(agrupacionPolitica_id = 38))
+	apus = APoliticaUbigeo.objects.filter(Q(ambito_id = 5), Q(agrupacionPolitica_id = 38))
 
 	try:
 		for apu in apus:

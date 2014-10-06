@@ -106,13 +106,13 @@ def getResumenCentroVotacion(request, idCentroVotacion, idAmbito):
 	
 	if ambito.nombre == "Regional":
 		# apus = ubigeo.apoliticaubigeo_set.filter(Q(ambito__pk = 1)| Q(ambito__pk = 2))
-		apus = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito__pk = 1).filter(acta__grupoVotacion__centroVotacion = centroVotacion).annotate(numVotos = Sum("acta__numVotos"))
+		apus = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito__pk = 1).filter(acta__grupoVotacion__centroVotacion = centroVotacion).annotate(numVotos = Sum("acta__numVotos")).order_by('agrupacionPolitica_id')
 
 		apusCons = APoliticaUbigeo.objects.filter(ubigeo = ubigeo, ambito__pk = 2).filter(acta__grupoVotacion__centroVotacion = centroVotacion).annotate(numVotos = Sum("acta__numVotos"))
 
 	else:
 		# apus = ubigeo.apoliticaubigeo_set.filter(Q(ambito__pk = 1)| Q(ambito__pk = 2))
-		apus = APoliticaUbigeo.objects.filter(Q(ubigeo = ubigeo), Q(ambito = ambito)).filter(acta__grupoVotacion__centroVotacion = centroVotacion).annotate(numVotos = Sum("acta__numVotos"))
+		apus = APoliticaUbigeo.objects.filter(Q(ubigeo = ubigeo), Q(ambito = ambito)).filter(acta__grupoVotacion__centroVotacion = centroVotacion).annotate(numVotos = Sum("acta__numVotos")).order_by('agrupacionPolitica_id')
 
 	return render(request, "elecciones_app/resumenCentroVotacion.html", locals())
 
